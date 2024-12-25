@@ -1,0 +1,11 @@
+[package]
+name = "rust"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+actix-web = "4.0"
+reqwest = { version = "0.12.9", features = ["blocking"] }
+scraper = "0.22"
+tokio = { version = "1", features = ["full"] }
+

@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  web:
+    build: .
+    ports:
+      - "6000:6000"
+    networks:
+      - scraper_network
+
+networks:
+  scraper_network:
+    driver: bridge
